@@ -21,10 +21,12 @@ public class CoinMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Coin collected by: " + other.name);
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Coin collected by player: " + other.name);
+            if(GameManager.Instance != null)
+            {
+                GameManager.Instance.CollectCoin();
+            }
             Destroy(this.gameObject);
         }    
     }

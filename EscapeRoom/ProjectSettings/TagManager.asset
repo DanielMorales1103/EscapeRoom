@@ -7,6 +7,9 @@ TagManager:
   - CinemachineTarget
   - Coin
   - Danger
+  - Clickeable
+  - Door
+  - Push
   layers:
   - Default
   - TransparentFX
