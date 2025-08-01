@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndGame : MonoBehaviour
 {
@@ -8,12 +9,7 @@ public class EndGame : MonoBehaviour
         {
             if (other.CompareTag("Player"))
             {
-                // Si estás en el editor, para la ejecución
-                #if UNITY_EDITOR
-                    UnityEditor.EditorApplication.isPlaying = false;
-                #else
-                    Application.Quit();
-                #endif
+                SceneManager.LoadScene("FinalMenu");
             }
         }
     }
