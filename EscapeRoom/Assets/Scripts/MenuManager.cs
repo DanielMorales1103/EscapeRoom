@@ -3,6 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
+    [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private GameObject CharacterController;
+    bool isPaused = false;
     public void Jugar()
     {
         SceneManager.LoadScene("SampleScene"); 
@@ -20,5 +23,22 @@ public class MenuManager : MonoBehaviour
     public void BackMenu()
     {
         SceneManager.LoadScene("MenuPrincipal");
+    }
+
+    public void PauseGame()
+    {
+        isPaused = !isPaused;
+
+        pauseMenu.SetActive(isPaused);
+        CharacterController.SetActive(!isPaused);
+        Time.timeScale = isPaused ? 0f : 1f;
+    }
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            PauseGame();
+        }
     }
 }
