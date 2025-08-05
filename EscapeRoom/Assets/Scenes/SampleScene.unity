@@ -876,7 +876,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 2cd06e4019e275f488521c4eaadf3409, type: 3}
   m_Resource: {fileID: 8300000, guid: 2cd06e4019e275f488521c4eaadf3409, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1156,7 +1156,7 @@ PrefabInstance:
       objectReference: {fileID: 1316829887}
     - target: {fileID: 3153096374542340226, guid: abb476cbd45d3084c9976401e20f4593, type: 3}
       propertyPath: m_VersionIndex
-      value: 1407
+      value: 1410
       objectReference: {fileID: 0}
     - target: {fileID: 3226822949468122600, guid: abb476cbd45d3084c9976401e20f4593, type: 3}
       propertyPath: m_Mesh
@@ -3480,6 +3480,8 @@ MonoBehaviour:
   Door: {fileID: 46011159}
   moveDistance: 5
   moveDuration: 1
+  slash: {fileID: 8300000, guid: 190e4e338db79d14f99dcd42516fabb9, type: 3}
+  volume: 1
 --- !u!4 &1258877261 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5945251742043970603, guid: e3502ee84172ff149a3acf132f81743a, type: 3}
@@ -3812,7 +3814,7 @@ PrefabInstance:
       objectReference: {fileID: 770623800}
     - target: {fileID: 3153096374542340226, guid: abb476cbd45d3084c9976401e20f4593, type: 3}
       propertyPath: m_VersionIndex
-      value: 1407
+      value: 1410
       objectReference: {fileID: 0}
     - target: {fileID: 3226822949468122600, guid: abb476cbd45d3084c9976401e20f4593, type: 3}
       propertyPath: m_Mesh
@@ -4262,7 +4264,7 @@ PrefabInstance:
       objectReference: {fileID: 484217270}
     - target: {fileID: 3153096374542340226, guid: abb476cbd45d3084c9976401e20f4593, type: 3}
       propertyPath: m_VersionIndex
-      value: 1407
+      value: 1410
       objectReference: {fileID: 0}
     - target: {fileID: 3226822949468122600, guid: abb476cbd45d3084c9976401e20f4593, type: 3}
       propertyPath: m_Mesh
@@ -4458,6 +4460,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pushPower: 2
+  push: {fileID: 8300000, guid: 364b4f1b659a6d3429c10deb1be90f34, type: 3}
+  volume: 1
 --- !u!1001 &1802738925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5174,7 +5178,7 @@ PrefabInstance:
       objectReference: {fileID: 1457253489}
     - target: {fileID: 3153096374542340226, guid: abb476cbd45d3084c9976401e20f4593, type: 3}
       propertyPath: m_VersionIndex
-      value: 1407
+      value: 1410
       objectReference: {fileID: 0}
     - target: {fileID: 3226822949468122600, guid: abb476cbd45d3084c9976401e20f4593, type: 3}
       propertyPath: m_Mesh
@@ -5369,7 +5373,7 @@ PrefabInstance:
       objectReference: {fileID: 684587257}
     - target: {fileID: 3153096374542340226, guid: abb476cbd45d3084c9976401e20f4593, type: 3}
       propertyPath: m_VersionIndex
-      value: 1407
+      value: 1410
       objectReference: {fileID: 0}
     - target: {fileID: 3226822949468122600, guid: abb476cbd45d3084c9976401e20f4593, type: 3}
       propertyPath: m_Mesh
@@ -5599,6 +5603,8 @@ MonoBehaviour:
   Door: {fileID: 374767382}
   moveDistance: 5
   moveDuration: 1
+  slash: {fileID: 8300000, guid: 190e4e338db79d14f99dcd42516fabb9, type: 3}
+  volume: 1
 --- !u!64 &2115028216
 MeshCollider:
   m_ObjectHideFlags: 0

@@ -6,6 +6,9 @@ public class OpenDoor : MonoBehaviour
     public Transform Door;
     public float moveDistance = 5f;
     public float moveDuration = 1f;
+
+    [SerializeField] private AudioClip slash;
+    [SerializeField][Range(0f, 1f)] private float volume = 1.0f;
     void Start()
     {
         
@@ -19,7 +22,8 @@ public class OpenDoor : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Push"))
-        {            
+        {         
+            AudioSource.PlayClipAtPoint(slash, transform.position, volume);
             StartCoroutine(MoveDoorSmooth());            
         }
     }

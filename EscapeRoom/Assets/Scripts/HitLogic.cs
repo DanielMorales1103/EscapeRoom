@@ -5,7 +5,10 @@ public class HitLogic : MonoBehaviour
 {
     public Transform Door;
     public float moveDistance = 5f;
-    public float moveDuration = 1f;   
+    public float moveDuration = 1f;
+
+    [SerializeField] private AudioClip slash;
+    [SerializeField][Range(0f, 1f)] private float volume = 1.0f;
 
     // Update is called once per frame
     void Update()
@@ -33,6 +36,7 @@ public class HitLogic : MonoBehaviour
                     {
                         rend.material.color = Color.green;
                     }
+                    AudioSource.PlayClipAtPoint(slash, transform.position, volume);
                     StartCoroutine(MoveDoorSmooth());
                 }
                 

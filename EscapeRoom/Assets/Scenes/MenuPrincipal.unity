@@ -678,7 +678,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: b7709587369a79b4d9f6a8fd7aef9e62, type: 3}
   m_Resource: {fileID: 8300000, guid: b7709587369a79b4d9f6a8fd7aef9e62, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -789,6 +789,7 @@ GameObject:
   - component: {fileID: 1401784779}
   - component: {fileID: 1401784778}
   - component: {fileID: 1401784777}
+  - component: {fileID: 1401784780}
   m_Layer: 5
   m_Name: SalirBT
   m_TagString: Untagged
@@ -910,6 +911,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1401784775}
   m_CullTransparentMesh: 1
+--- !u!114 &1401784780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401784775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e7b39010aaa8944680c1569b4a8c892, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverClip: {fileID: 8300000, guid: 379442f23bd83524ebd324315626fab6, type: 3}
+  clickClip: {fileID: 8300000, guid: eeaa312564ef5714ea9561ab77a707fe, type: 3}
 --- !u!1 &1527357470
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,6 +937,7 @@ GameObject:
   - component: {fileID: 1527357474}
   - component: {fileID: 1527357473}
   - component: {fileID: 1527357472}
+  - component: {fileID: 1527357475}
   m_Layer: 5
   m_Name: Instrucciones
   m_TagString: Untagged
@@ -1043,6 +1059,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1527357470}
   m_CullTransparentMesh: 1
+--- !u!114 &1527357475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527357470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e7b39010aaa8944680c1569b4a8c892, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverClip: {fileID: 8300000, guid: 379442f23bd83524ebd324315626fab6, type: 3}
+  clickClip: {fileID: 8300000, guid: eeaa312564ef5714ea9561ab77a707fe, type: 3}
 --- !u!1 &1608229342
 GameObject:
   m_ObjectHideFlags: 0
@@ -1438,6 +1468,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670698676}
   m_CullTransparentMesh: 1
+--- !u!1 &1862407553
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1862407555}
+  - component: {fileID: 1862407554}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1862407554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862407553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7024f5b76546b5498263c380a123037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1862407555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862407553}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13.894, y: 1.346, z: -8.013311}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1972081544
 GameObject:
   m_ObjectHideFlags: 0
@@ -1450,6 +1524,7 @@ GameObject:
   - component: {fileID: 1972081548}
   - component: {fileID: 1972081547}
   - component: {fileID: 1972081546}
+  - component: {fileID: 1972081549}
   m_Layer: 5
   m_Name: JugarBT
   m_TagString: Untagged
@@ -1571,6 +1646,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1972081544}
   m_CullTransparentMesh: 1
+--- !u!114 &1972081549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972081544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e7b39010aaa8944680c1569b4a8c892, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverClip: {fileID: 8300000, guid: 379442f23bd83524ebd324315626fab6, type: 3}
+  clickClip: {fileID: 8300000, guid: eeaa312564ef5714ea9561ab77a707fe, type: 3}
 --- !u!1 &2118409059
 GameObject:
   m_ObjectHideFlags: 0
@@ -1659,3 +1748,4 @@ SceneRoots:
   - {fileID: 209394961}
   - {fileID: 2118409062}
   - {fileID: 1033010579}
+  - {fileID: 1862407555}
