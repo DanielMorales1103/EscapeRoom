@@ -4,7 +4,10 @@ public class CoinMovement : MonoBehaviour
 {
     public float floatSpeed = 2f;      
     public float floatHeight = 0.5f;   
-    public float rotationSpeed = 90f;  
+    public float rotationSpeed = 90f;
+
+    [SerializeField] private AudioClip coinClip;
+    [SerializeField][Range(0f, 1f)] private float volume = 1.0f;
 
     private Vector3 startPos;
     void Start()
@@ -25,6 +28,7 @@ public class CoinMovement : MonoBehaviour
         {
             if(GameManager.Instance != null)
             {
+                AudioSource.PlayClipAtPoint(coinClip, transform.position, volume);
                 GameManager.Instance.CollectCoin();
             }
             Destroy(this.gameObject);

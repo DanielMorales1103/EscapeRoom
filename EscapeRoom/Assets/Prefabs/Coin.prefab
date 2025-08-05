@@ -126,3 +126,5 @@ MonoBehaviour:
   floatSpeed: 2
   floatHeight: 0.5
   rotationSpeed: 90
+  coinClip: {fileID: 8300000, guid: d7ffc01d789986c4995dec5e9f93c29e, type: 3}
+  volume: 0.8
