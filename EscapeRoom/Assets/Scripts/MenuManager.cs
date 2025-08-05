@@ -25,6 +25,11 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("MenuPrincipal");
     }
 
+    public void Instructions()
+    {
+        SceneManager.LoadScene("Instructions");
+    }
+
     public void PauseGame()
     {
         isPaused = !isPaused;
